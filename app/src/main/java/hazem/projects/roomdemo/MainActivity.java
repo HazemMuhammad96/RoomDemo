@@ -15,11 +15,10 @@ import hazem.projects.roomdemo.ui.TasksRecyclerAdapter;
 public class MainActivity extends AppCompatActivity {
 
     TextView alertText;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
         setContentView(R.layout.activity_main);
 
 //        setSupportActionBar(binding.toolbar);
@@ -53,8 +52,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void showAlert(boolean isEmpty){
-        if (isEmpty)  alertText.setVisibility(View.VISIBLE);
+    private void showAlert(boolean isEmpty) {
+        if (isEmpty) alertText.setVisibility(View.VISIBLE);
         else alertText.setVisibility(View.GONE);
     }
 }

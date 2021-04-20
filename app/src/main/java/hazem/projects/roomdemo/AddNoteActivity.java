@@ -27,6 +27,7 @@ public class AddNoteActivity extends AppCompatActivity {
         notesEditText = findViewById(R.id.notes_editText);
 
         repository = TasksRepository.getInstance(this);
+        // TODO 6.2 - Insert to Room Database
         SaveNote();
 
     }
