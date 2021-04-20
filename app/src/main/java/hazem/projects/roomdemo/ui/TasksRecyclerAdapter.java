@@ -83,6 +83,8 @@ public class TasksRecyclerAdapter extends RecyclerView.Adapter<TasksRecyclerAdap
                 notesText.setText(task.getNotes());
             } else notesText.setVisibility(View.GONE);
 
+
+            // TODO 6.3 - Update and delete entities
             checkBox.setOnClickListener(view -> {
                 task.setChecked(!task.isChecked());
                 repository.update(task);
